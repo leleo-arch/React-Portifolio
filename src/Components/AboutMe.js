@@ -46,8 +46,8 @@ const ProfilePic = styled.img`
 
 const AboutMe = () => (
   <AboutWrapper id="about">
+    <ProfilePic src='https://avatars.githubusercontent.com/u/157326171?v=4' alt="Minha foto de perfil" />
     <Title>Sobre Mim</Title>
-    <ProfilePic alt="Minha foto de perfil" />
     <Subtitle>
       Sou um profissional apaixonado por unir criatividade e código. Com formação em Tecnologia Multimídia e Publicidade e Propaganda e com experiência em programação, trago uma abordagem única para projetos digitais.
     </Subtitle>

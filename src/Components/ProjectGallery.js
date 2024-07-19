@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -15,93 +15,81 @@ const fadeIn = keyframes`
 `;
 
 const GalleryWrapper = styled.section`
-  padding: 50px 0;
-  background: #f4f4f4;
+  padding: 60px 20px;
+  background: #f9f9f9;
 `;
 
 const GalleryTitle = styled.h2`
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-size: 2.2em;
   color: #333;
   animation: ${fadeIn} 1s ease forwards;
 `;
 
 const Projects = styled.div`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `;
 
 const Project = styled.div`
-  flex: 1 1 30%;
-  background: white;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
   animation: ${fadeIn} 0.5s ease forwards;
   animation-delay: ${(props) => props.index * 0.1}s;
 
   &:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }
-`;
-
-const ImageWrapper = styled.div`
-  overflow: hidden;
-  border-radius: 5px;
-  position: relative;
 `;
 
 const ProjectImage = styled(LazyLoadImage)`
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-  filter: grayscale(0%);
-
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease-in-out;
+  
   &:hover {
-    transform: scale(1.1);
-    filter: grayscale(30%);
+    transform: scale(1.05);
   }
 `;
 
+const ProjectContent = styled.div`
+  padding: 20px;
+  text-align: center;
+`;
+
 const ProjectTitle = styled.h3`
-  margin-top: 10px;
-  font-size: 1.5em;
-  color: #555;
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
   font-size: 1em;
-  color: #777;
-  margin-top: 10px;
+  color: #555;
+  margin-bottom: 20px;
 `;
 
 const ProjectButton = styled.a`
   display: inline-block;
-  margin-top: 20px;
   padding: 10px 20px;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #fff;
   background-color: #007bff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: #0056b3;
-    transform: translateY(-3px);
   }
 `;
 
@@ -156,30 +144,28 @@ const projects = [
   },
 ];
 
-const ProjectGallery = React.memo(() => (
+const ProjectGallery = () => (
   <GalleryWrapper id="projects">
     <GalleryTitle>Meus Projetos</GalleryTitle>
     <Projects>
       {projects.map((project, index) => (
         <Project key={index} index={index}>
           <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <ImageWrapper>
-              <ProjectImage 
-                src={project.image} 
-                alt={project.title} 
-                effect="blur"
-              />
-            </ImageWrapper>
-            <ProjectTitle>{project.title}</ProjectTitle>
-            <ProjectDescription>{project.description}</ProjectDescription>
-            <ProjectButton href={project.link} target="_blank" rel="noopener noreferrer">
-              Veja Mais
-            </ProjectButton>
+            <ProjectImage 
+              src={project.image} 
+              alt={project.title} 
+              effect="blur"
+            />
+            <ProjectContent>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ProjectDescription>{project.description}</ProjectDescription>
+              <ProjectButton>Veja Mais</ProjectButton>
+            </ProjectContent>
           </a>
         </Project>
       ))}
     </Projects>
   </GalleryWrapper>
-));
+);
 
 export default ProjectGallery;
