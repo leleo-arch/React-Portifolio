@@ -95,10 +95,22 @@ const ProjectButton = styled.a`
 
 const projects = [
   {
-    title: 'Portfólio',
+    title: 'Aplicativo - Jiu-Jitsu',
+    description: 'Aplicativo - Jiu-Jitsu',
+    image: 'https://img.icons8.com/color/48/000000/react-native.png',
+    link: 'https://innova-jiu.netlify.app'
+  },
+  {
+    title: 'Site - Portfólio',
     description: 'Leonardo Soares ',
-    image: 'https://img.icons8.com/color/48/000000/github.png',
+    image: 'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://github.com/leleo-arch'
+  },
+  {
+    title: 'Node.js',
+    description: 'ORM ',
+    image: 'https://img.icons8.com/color/48/000000/nodejs.png',
+    link: 'https://github.com/leleo-arch/Node_ORM_Sequelize'
   },
   {
     title: 'Site - Clima Tempo',
