@@ -95,51 +95,51 @@ const ProjectButton = styled.a`
 
 const projects = [
   {
-    title: 'Projeto 1',
-    description: 'Descrição do Projeto 1',
-    image: 'https://via.placeholder.com/300',
-    link: 'https://innova-jiu.netlify.app'
+    title: 'Portfólio',
+    description: 'Leonardo Soares ',
+    image: 'https://img.icons8.com/color/48/000000/github.png',
+    link: 'https://github.com/leleo-arch'
   },
   {
-    title: 'Projeto 2',
-    description: 'Descrição do Projeto 2',
-    image: 'https://via.placeholder.com/300',
+    title: 'Site - Clima Tempo',
+    description: 'Site - Clima Tempo',
+    image: 'https://img.icons8.com/color/48/000000/bootstrap.png',
     link: 'https://watherdnc.netlify.app'
   },
   {
-    title: 'Projeto 3',
-    description: 'Descrição do Projeto 3',
-    image: 'https://via.placeholder.com/300',
+    title: 'Lading Page - Arquitetura',
+    description: 'Lading Page - Arquitetura',
+    image: 'https://img.icons8.com/color/48/000000/css.png',
     link: 'https://arquitednc.netlify.app'
   },
   {
-    title: 'Projeto 4',
-    description: 'Descrição do Projeto 4',
-    image: 'https://via.placeholder.com/300',
+    title: 'Lading Page - Starbucks',
+    description: 'Lading Page - Starbucks',
+    image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://glittering-cascaron-8bda26.netlify.app'
   },
   {
-    title: 'Projeto 5',
-    description: 'Descrição do Projeto 5',
-    image: 'https://via.placeholder.com/300',
+    title: 'Site - Conversor Money',
+    description: 'Site - Conversor Money',
+    image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://moneyinnova.netlify.app'
   },
   {
-    title: 'Projeto 6',
-    description: 'Descrição do Projeto 6',
-    image: 'https://via.placeholder.com/300',
+    title: 'Site - Sorteio',
+    description: 'Site - Sorteio',
+    image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://randonsinnova.netlify.app'
   },
   {
-    title: 'Projeto 7',
-    description: 'Descrição do Projeto 7',
-    image: 'https://via.placeholder.com/300',
+    title: 'Lading Page - Jokenpo',
+    description: 'Lading Page - Jokenpo',
+    image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://jokenpoinnova.netlify.app'
   },
   {
-    title: 'Projeto 8',
-    description: 'Descrição do Projeto 8',
-    image: 'https://via.placeholder.com/300',
+    title: 'Site - Cardapio ',
+    description: 'Site - Cardapio',
+    image: 'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://cardapioinnova.netlify.app'
   },
 ];
