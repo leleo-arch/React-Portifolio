@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -95,6 +95,12 @@ const ProjectButton = styled.a`
 
 const projects = [
   {
+    title: 'Meu Github',
+    description: 'Aplicativo - Jiu-Jitsu',
+    image: 'https://img.icons8.com/color/48/000000/github.png',
+    link: 'https://github.com/leleo-arch'
+  },
+  {
     title: 'Aplicativo - Jiu-Jitsu',
     description: 'Aplicativo - Jiu-Jitsu',
     image: 'https://img.icons8.com/color/48/000000/react-native.png',
@@ -129,6 +135,12 @@ const projects = [
     description: 'Lading Page - Starbucks',
     image: 'https://img.icons8.com/color/48/000000/javascript.png',
     link: 'https://glittering-cascaron-8bda26.netlify.app'
+  },
+  {
+    title: 'Lading Page - Starbucks',
+    description: 'Lading Page - Starbucks',
+    image: 'https://img.icons8.com/color/48/000000/html-5.png',
+    link: 'https://clickmint.netlify.app'
   },
   {
     title: 'Site - Conversor Money',
