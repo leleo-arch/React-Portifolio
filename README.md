@@ -1,7 +1,7 @@
 
 <h1>Leonardo Soares - Portfólio</h1>
 ## Descrição
-Este é o portfólio pessoal de Leonardo Soares, um desenvolvedor Full-Stack freelancer com experiência em HTML, CSS, JavaScript, TypeScript, Node.js, React e outras tecnologias. O portfólio destaca projetos, habilidades e a trajetória profissional de Leonardo.
+Este é meu portfólio pessoal, desenvolvedor Full-Stack freelancer com experiência em HTML, CSS, JavaScript, TypeScript, Node.js, React e outras tecnologias. O portfólio destaca projetos, habilidades e a trajetória profissional de Leonardo.
 
 ### Funcionalidades
 
@@ -12,3 +12,7 @@ Contato: Formulário de contato e informações para entrar em contato.
 Tecnologias Utilizadas
 Frontend: React, styled-components
 Deploy: Netlify
+
+### Site 
+
+Siet: https://leonardosoares.netlify.app/
