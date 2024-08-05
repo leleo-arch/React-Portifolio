@@ -96,7 +96,7 @@ const ProjectButton = styled.a`
 const projects = [
   {
     title: 'Meu Github',
-    description: 'Aplicativo - Jiu-Jitsu',
+    description: 'Aplicativo - Jiu-Jitsu - Mobile',
     image: 'https://img.icons8.com/color/48/000000/github.png',
     link: 'https://github.com/leleo-arch'
   },
