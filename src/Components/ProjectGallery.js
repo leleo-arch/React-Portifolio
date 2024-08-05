@@ -96,12 +96,12 @@ const ProjectButton = styled.a`
 const projects = [
   {
     title: 'Meu Github',
-    description: 'Aplicativo - Jiu-Jitsu - Mobile',
+    description: '',
     image: 'https://img.icons8.com/color/48/000000/github.png',
     link: 'https://github.com/leleo-arch'
   },
   {
-    title: 'Aplicativo - Jiu-Jitsu',
+    title: 'Aplicativo - Jiu-Jitsu - Mobile',
     description: 'Aplicativo - Jiu-Jitsu',
     image: 'https://img.icons8.com/color/48/000000/react-native.png',
     link: 'https://innova-jiu.netlify.app'
