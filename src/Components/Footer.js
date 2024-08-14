@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  background: #282c34;
-  color: white;
+    background: #0F1624;
+    color: black;
   text-align: center;
-  padding: 20px 0;
   position: absolute;
   width: 100%;
   bottom: 1;
+  height: 10px;
 `;
 
 const Footer = () => (

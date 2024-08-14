@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const HeaderWrapper = styled.header`
   text-align: center;
   padding: 50px 0;
-  background: #282c34;
-  color: white;
+  background-color: #0F1624;
+    color: white;
 `;
 
 const Title = styled.h1`

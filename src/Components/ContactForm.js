@@ -1,63 +1,59 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const FormWrapper = styled.section`
-  padding: 50px 0;
-  background: #ffffff;
+
+
+const ContactSection = styled.section`
+  padding: 2rem 0;
   text-align: center;
+ background-color: #0F1624;
+ `;
+
+const ContactTitle = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color:white;
+
 `;
 
-const FormTitle = styled.h2`
-  margin-bottom: 30px;
+
+const ContactDescription = styled.p`
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color:white;
 `;
 
-const Form = styled.form`
-  max-width: 500px;
-  margin: 0 auto;
-`;
-
-const Input = styled.input`
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-`;
-
-const Textarea = styled.textarea`
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-`;
-
-const Button = styled.button`
-  padding: 10px 20px;
-  background: #282c34;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+const ContactButton = styled.a`
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-left: 20px;
+  
 
   &:hover {
-    background: #3a3f47;
+    background-color: #555;
   }
 `;
 
-function ContactForm() { return (
-  <FormWrapper id="contact">
-    <FormTitle>Contato</FormTitle>
-    <Form>
-      <Input type="text" placeholder="Nome" required />
-      <Input type="email" placeholder="Email" required />
-      <Textarea placeholder="Mensagem" rows="5" required />
-      <Button type="submit">Enviar</Button>
-    </Form>
-  </FormWrapper>
 
-)};
+const Contact = () => {
+  return (
+    <ContactSection id="contact">
+      <ContactTitle>Entre em Contato</ContactTitle>
+      <ContactDescription>
+        Gostaria de saber mais sobre meus projetos ou discutir uma oportunidade? Sinta-se à vontade para me enviar uma mensagem!
+      </ContactDescription>
+       <ContactButton href="mailto:leo_deplay@outlook.com.com">Enviar E-mail</ContactButton>
+       <ContactButton href="https://wa.me/5511965531504?text=Ol%C3%A1!">Entrar em Contato</ContactButton>
+    
+     
+    </ContactSection>
+  );
+};
 
-export default ContactForm;
+export default Contact;
 

@@ -14,8 +14,7 @@ const fadeIn = keyframes`
 
 const AboutWrapper = styled.section`
   padding: 60px 20px;
-  background: #fff;
-  display: flex;
+  background-color: #0F1624;  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -25,13 +24,13 @@ const AboutWrapper = styled.section`
 
 const Title = styled.h2`
   font-size: 2.5em;
-  color: #333;
+  color: #fff;
   margin-bottom: 20px;
 `;
 
 const Subtitle = styled.p`
   font-size: 1.2em;
-  color: #777;
+  color: #fff;
   max-width: 800px;
   line-height: 1.6;
 `;

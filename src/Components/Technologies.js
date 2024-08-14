@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const fadeIn = keyframes`
@@ -14,14 +13,14 @@ const fadeIn = keyframes`
 
 const TechnologiesWrapper = styled.section`
   padding: 60px 20px;
-  background: #f9f9f9;
+  background-color: #0F1624;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
 `;
 
 const Title = styled.h2`
   font-size: 2.5em;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 40px;
 `;
 
@@ -40,10 +39,10 @@ const TechGrid = styled.div`
 `;
 
 const TechItem = styled.div`
-  background: white;
-  border-radius: 8px;
+background-color: #0F1624;
+border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgb(255, 255, 255);
   transition: transform 0.3s, box-shadow 0.3s;
   width: 120px;
   text-align: center;
@@ -52,7 +51,7 @@ const TechItem = styled.div`
 
   &:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(69, 212, 255, 0.7);
   }
 `;
 
@@ -64,7 +63,7 @@ const TechIcon = styled.img`
 
 const TechName = styled.p`
   font-size: 1em;
-  color: #555;
+  color: #ffffff;
 `;
 
 const technologies = [
