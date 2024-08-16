@@ -33,11 +33,11 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto; /* Permite rolagem horizontal */
-  white-space: nowrap; /* Impede que os itens quebrem em várias linhas */
-
+  overflow-x: auto; 
+  white-space: nowrap; 
   @media screen and (max-width: 900px) {
     margin-top: 20px;
+    padding: 10px;
   }
 `;
 
