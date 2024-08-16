@@ -6,6 +6,7 @@ const ContactSection = styled.section`
   padding: 2rem 0;
   text-align: center;
  background-color: #0F1624;
+ margin-bottom: -80px;
  `;
 
 const ContactTitle = styled.h2`

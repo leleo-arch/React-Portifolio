@@ -2,9 +2,10 @@ import React from 'react';
 import Header from './Components/Header';
 import ProjectGallery from './Components/ProjectGallery';
 import ContactForm from './Components/ContactForm';
-import Footer from './Components/Footer';
 import Technologies from './Components/Technologies';
 import About from './Components/About';
+import Certificado from './Components/Certificados';
+
 
 
 import { GlobalStyle, Container } from './styles';
@@ -20,8 +21,8 @@ function App() {
       <Technologies/>
       <ProjectGallery />
       <About/>
+      <Certificado/>
       <ContactForm />
-      <Footer />
     </Container>
   );
 }

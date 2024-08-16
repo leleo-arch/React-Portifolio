@@ -35,6 +35,26 @@ const Subtitle = styled.p`
   line-height: 1.6;
 `;
 
+const Button = styled.a`
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  width: 50%;
+  border-radius: 25px;
+  height: 50px;
+  margin-left: 40px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+  
+  &:hover {
+    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 80%, #945DD6 120%);
+  }
+`;
+
+
 const ProfilePic = styled.img`
   width: 150px;
   height: 150px;
@@ -50,8 +70,8 @@ const AboutMe = () => (
     <Subtitle>
       Sou um profissional apaixonado por unir criatividade e código. Com formação em Tecnologia Multimídia e Publicidade e Propaganda e com experiência em programação, trago uma abordagem única para projetos digitais.
     </Subtitle>
- 
-  </AboutWrapper>
+    <Button href="./assets/LeonardoSoares.pdf" download="Curriculo_Leonardo_Soares.pdf">Meu Currículo</Button>
+    </AboutWrapper>
 );
 
 export default AboutMe;
