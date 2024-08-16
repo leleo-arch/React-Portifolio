@@ -44,7 +44,7 @@ const NavLink = styled.a`
   margin: 0 10px;
   text-decoration: none;
   color: white;
-  font-size: 1em;
+  font-size: 1.1em;
   transition: color 0.3s;
 
   &:hover {
@@ -53,7 +53,7 @@ const NavLink = styled.a`
 
   @media screen and (max-width: 375px) {
     margin: 0 10px;
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 `;
 
@@ -74,13 +74,13 @@ const NavLink2 = styled.a`
 `;
 
 const Image = styled.img`
-  margin-left: 0px;
+  margin-left: -9px;
   width: 20px;
   height: 20px;
 
   @media screen and (max-width: 375px) {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 `;
 
