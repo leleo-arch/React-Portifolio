@@ -34,9 +34,12 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow-x: auto;
 
   @media screen and (max-width: 900px) {
     margin-top: 20px;
+      overflow-x: auto;
+
   }
 `;
 
