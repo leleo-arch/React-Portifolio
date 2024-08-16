@@ -33,13 +33,11 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  overflow-x: auto;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  white-space: nowrap; /* Impede que os itens quebrem em várias linhas */
 
   @media screen and (max-width: 900px) {
     margin-top: 20px;
-      overflow-x: auto;
-
   }
 `;
 
@@ -61,7 +59,7 @@ const NavLink = styled.a`
 `;
 
 const NavLink2 = styled.a`
-  margin: 0 10px;
+  margin: 0 5px;
   text-decoration: none;
   color: white;
   font-size: 1em;
@@ -77,7 +75,6 @@ const NavLink2 = styled.a`
 `;
 
 const Image = styled.img`
-  margin-left: -9px;
   width: 20px;
   height: 20px;
 
