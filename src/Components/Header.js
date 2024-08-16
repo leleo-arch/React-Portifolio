@@ -53,7 +53,7 @@ const NavLink = styled.a`
 
   @media screen and (max-width: 375px) {
     margin: 0 10px;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
 `;
 
@@ -74,13 +74,13 @@ const NavLink2 = styled.a`
 `;
 
 const Image = styled.img`
-  margin-left: 5px;
+  margin-left: 0px;
   width: 20px;
   height: 20px;
 
   @media screen and (max-width: 375px) {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
   }
 `;
 
