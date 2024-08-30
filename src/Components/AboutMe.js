@@ -70,7 +70,7 @@ const AboutMe = () => (
     <Subtitle>
       Sou um profissional apaixonado por unir criatividade e código. Com formação em Tecnologia Multimídia e Publicidade e Propaganda e com experiência em programação, trago uma abordagem única para projetos digitais.
     </Subtitle>
-    <Button href="https://drive.google.com/file/d/1IZzurRNIjG3DAyroSqC0xbjDlv02qqG4/view?usp=sharing" download="Curriculo_Leonardo_Soares.pdf">Meu Currículo</Button>
+    <Button href="https://trampos.co/leonardo-arch" download="Curriculo_Leonardo_Soares.pdf">Meu Currículo</Button>
     </AboutWrapper>
 );
 
